@@ -1,0 +1,50 @@
+.convert-header {
+    background: #6E0D33;
+    color: #fff;
+}
+
+.convert-profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5in;
+    height: 3.75in;
+    flex: 0 0 3.75in;
+}
+
+.convert-profile-image img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.convert-profile-details {
+    align-items: center;
+    margin: 0.25in;
+}
+
+.convert-profile-details h2 {
+    font-size: 2rem;
+}
+
+.convert-profile-details h3 {
+    font-size: 1.6rem;
+}
+
+.convert-story-section {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    min-height: 0;
+    margin-top: 0.2in;
+    overflow: hidden;
+}
+
+.convert-story {
+    width: 7.38in;
+    height: 0;
+    flex: 1 1 0;
+    min-height: 0;
+}

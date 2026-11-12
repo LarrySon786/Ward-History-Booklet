@@ -1,0 +1,46 @@
+<head>
+    <link rel="stylesheet" href="Convert.css">
+</head>
+
+<section class="page page-one">
+    <header class="convert-header">
+        <h1>Convert Stories</h1>
+    </header>
+
+    <section class="page-content">
+        <section class="convert-profile-hero">
+            <div class="convert-profile-image">
+                <img src="{{imageOneReference}}" alt="Photo of {{FullName}}">
+            </div>
+            <div class="convert-profile-details">
+                <h2>{{FullName}}</h2>
+                <h3>Baptized in {{Location}} ({{Year}})</h3>
+            </div>
+            <div class="convert-profile-image">
+                <img src="{{imageTwoReference}}" alt="Baptism Photo of {{FullName}}">
+            </div>
+        </section>
+    </section>
+
+    <footer class="page-footer">
+        <span>Ward History {{FullName}}</span>
+        <span>1</span>
+    </footer>
+</section>
+
+<section class="page page-two">
+    <header class="convert-header">
+        <h1></h1>
+    </header>
+
+    <div class="page-content story-content">
+        <section class="about-section convert-story-section">
+            <h1>My Story</h1>
+            <div class="body-copy convert-story" style="{{ConversionStoryStyle}}">{{ConversionStory}}</div>
+        </section>
+    </div>
+    <footer class="page-footer">
+        <span>Ward History {{FullName}}</span>
+        <span>2</span>
+    </footer>
+</section>

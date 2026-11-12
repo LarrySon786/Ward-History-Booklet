@@ -1,0 +1,68 @@
+<head>
+    <link rel="stylesheet" href="Family.css">
+</head>
+
+<!-- PAGE 1: FAMILY INTRODUCTION -->
+<section class="page page-one">
+    <header class="family-header">
+        <h1>Families and Individuals</h1>
+    </header>
+
+    <section class="family-profile-hero">
+        
+        <div class="family-photo">
+            <img src="{{FamilyPhotoReference}}" alt="Family Photo of {{FamilySurname}} family">
+        </div>
+    </section>
+    <section class="page-content" style="padding-top:0.1rem;">
+        <div class="family-profile-details">
+            <h2>The {{FamilySurname}} Family</h2>
+            <h3>{{DatesMarkUp}}</h3>
+        </div>
+        <section class="family-biography">
+            <h4 style = "font-size: 1rem; font-weight: 700; text-align: center; margin:0; margin-top:0.5rem;">Family Biography</h4>
+            <div class="body-copy" style="{{FamilyBiographyStyle}}">
+                {{FamilyBiography}}
+            </div>
+        </section>
+    </section>
+
+    <footer class="page-footer">
+        <span>Ward History - {{FamilySurname}} Family</span>
+        <span>1</span>
+    </footer>
+</section>
+
+
+<!-- PAGE 2: PARENTS AND CHILDREN -->
+<section class="page page-two">
+    <header class="family-header">
+        <h1>Families and Individuals</h1>
+    </header>
+
+    <section class="page-content">
+        <div class="wedding-photo-section">
+            <div class="ordinary-photo-container wedding-photo-container">
+                <img src="{{WeddingPhotoReference}}" alt="Wedding or Alternate Photo of {{FamilySurname}} family">
+            </div>
+        </div>
+        
+        <div class="parent-child-bio-container">
+            <div class="parent-section">
+                {{FatherMarkup}}
+
+                {{MotherMarkup}}
+            </div>
+
+            {{ChildrenMarkup}}
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <span>Ward History - {{FamilySurname}} Family</span>
+        <span>2</span>
+    </footer>
+</section>
+
+
+{{PageThreeAndFour}}

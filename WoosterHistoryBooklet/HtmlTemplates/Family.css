@@ -1,0 +1,204 @@
+.family-header {
+    background-color: #E66A1f;
+    color: #fff;
+}
+
+
+.family-photo {
+    width: 100%;
+    height: auto;
+    max-height: 5.65in;
+    flex: 0 0 auto;
+}
+
+.family-photo img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 5.65in;
+    margin: auto;
+}
+
+
+/* =========================
+   FAMILY PROFILE
+   ========================= */
+
+.family-profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.family-profile-details h2 {
+    margin-top: 0.75rem;
+    font-size: 2rem;
+}
+
+.family-profile-details h3 {
+    font-size: 1.2rem;
+}
+
+/* Wedding Photo */
+
+.wedding-photo-section {
+    height: 3.75in;
+    flex: 0 0 3.75in;
+    margin-bottom: 0;
+    padding-top: -0.2in;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+    gap: 0.25in;
+}
+
+.wedding-photo-container {
+    width: 5in;
+    height: 3.75in;
+}
+
+
+.parent-child-bio-container {
+    display: grid;
+    grid-template-columns: 3.8fr 1.2fr;
+    column-gap: 12px;
+    height: auto;
+    flex: 1 1 0;
+    min-height: 0;
+}
+
+.parent-section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap:12px;
+    min-height: 0;
+}
+
+.parent-bio {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    min-height: 0;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 3%;
+    box-shadow: 0 2px 10px rgba(24, 39, 52, 0.08);
+    padding-top:0.25rem;
+    padding-bottom: 0.25rem;
+}
+.parent-bio h3 {
+    flex: 0 0 auto;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #54748B;  
+    text-align: left;  
+    margin:0;
+}
+
+
+.parent-bio p {
+    margin-top: 0.6rem;
+    line-height: 1.4;
+}
+
+.parent-bio .body-copy {
+    width: 5in;
+    height: 0;
+    flex: 1 1 0;
+    min-height: 0;
+}
+
+.children-section{
+    align-self: center;
+    height:100%;
+}
+
+.children-header {
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 3px solid #54748B;
+    padding-bottom:4px;
+}
+
+.children-section ul {
+    list-style: none;
+    margin:4px;
+    width: 1.4in;
+    height: auto;
+}
+.children-section li {
+    margin-bottom: 8px;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.family-biography {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.family-biography .body-copy {
+    width: 7.38in;
+    height: 2.2in;
+    flex: 0 0 2.2in;
+    min-height: 0;
+}
+
+.family-story {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.family-story .body-copy {
+    width: 7.38in;
+    height: 0;
+    flex: 1 1 0;
+    min-height: 0;
+}
+
+.temple-section {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.temple-photo-container {
+    width: 100%;
+    height: auto;
+    max-height: 6in;
+    overflow: hidden;
+}
+
+.temple-photo-container img {
+    max-width: 100%;
+    max-height: 6in;
+}
+
+.temple-information {
+    display: flex;
+    height: 3.27in;
+    flex: 0 0 3.27in;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.temple-information .body-copy {
+    width: 7.38in;
+    height: 0;
+    flex: 1 1 0;
+    min-height: 0;
+}
+

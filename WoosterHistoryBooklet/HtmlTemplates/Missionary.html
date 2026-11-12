@@ -1,0 +1,51 @@
+<head>
+    <link rel="stylesheet" href="Missionary.css">
+</head>
+
+<section class="page page-one">
+    <header class="missionary-header">
+        <h1>Missionary Stories</h1>
+    </header>
+
+    <section class="page-content">
+        <section class="missionary-profile-hero">
+            <div class="missionary-profile-image">
+                <img src="{{imageOneReference}}" alt="Photo of {{FullName}}">
+            </div>
+            <div class="missionary-profile-details">
+                <h2>{{FullName}}</h2>
+                <h3>{{MissionName}} {{YearLeft}}</h3>
+            </div>
+        </section>
+        <section class="about-section">
+            <h1>About My Mission</h1>
+            <div class="body-copy" style="{{AboutMissionStyle}}">{{MissionDescribed}}</div>
+        </section>
+    </section>
+
+    <footer class="page-footer">
+        <span>Ward History {{FullName}}</span>
+        <span>1</span>
+    </footer>
+</section>
+
+<section class="page page-two">
+    <div class="mission-photo">
+        <img src="{{imageTwoReference}}" alt="Photo representing {{MissionName}}">
+    </div>
+    <div class="page-content story-content">
+        <section class="story story-one">
+            <h2>{{InterestingStoryTitle}}</h2>
+            <div class="body-copy" style="{{InterestingStoryStyle}}">{{InterestingStory}}</div>
+        </section>
+
+        <section class="story story-two">
+            <h2>{{SpiritualStoryTitle}}</h2>
+            <div class="body-copy" style="{{SpiritualStoryStyle}}">{{SpiritualStory}}</div>
+        </section>
+    </div>
+    <footer class="page-footer">
+        <span>Ward History {{FullName}}</span>
+        <span>2</span>
+    </footer>
+</section>
