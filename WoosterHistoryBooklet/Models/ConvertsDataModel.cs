@@ -10,10 +10,10 @@ public class ConvertsDataModel
     [Name("Your Full Name")]
     public required string FullName { get; set; }
 
-    [Name("Your Baptism Year (optional)")]
+    [Name("Your Baptism Year")]
     public int? BaptismYear { get; set; }
 
-    [Name("Your Baptism Location (optional)")]
+    [Name("Your Baptism Location")]
     public string? BaptismLocation { get; set; }
 
     [Name("Your Story")]

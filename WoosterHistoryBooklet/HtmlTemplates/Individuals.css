@@ -1,0 +1,32 @@
+
+.individual-profile-details h2 {
+    margin-top: 0.75rem;
+    font-size: 2rem;
+}
+
+.individual-profile-details h3 {
+    font-size: 1.3rem;
+}
+
+.individual-photo-container {
+    height:3.5in;
+    width:5in;
+}
+
+.short-bio-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.short-bio-content-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.individual-bio-cards {
+    background-color: #fff;
+    padding:0.5rem;
+    border-radius: 3%;
+}

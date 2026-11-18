@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using PeachDrawing.Core;
 using PeachPDF;
 using WoosterHistoryBooklet.Extensions;
 using WoosterHistoryBooklet.Models;
@@ -41,11 +42,11 @@ Console.WriteLine("******************************");
 // SECTION I | Preassemble Data
 // This section reads and assigns all csv data to their proper section
 
-var familyData = CsvExtension.ReadCsv<FamilyDataModel>("WardData/Families/TestResponses.csv");
-var missionData = CsvExtension.ReadCsv<MissionDataModel>("WardData/Missions/TestResponses.csv");
-// var individualData = CsvExtension.ReadCsv<MissionDataModel>("WardData/Individuals/Responses.csv");
+var familyData = CsvExtension.ReadCsv<FamilyDataModel>("WardData/Families/SampleResponses.csv");
+var missionData = CsvExtension.ReadCsv<MissionDataModel>("WardData/Missions/SampleResponses.csv");
+// var individualData = CsvExtension.ReadCsv<IndividualDataModel>("WardData/Individuals/Responses.csv");
 // var wardHistoryData = CsvExtension.ReadCsv<MissionDataModel>("WardData/WardHistory/Responses.csv");
-var convertData = CsvExtension.ReadCsv<ConvertsDataModel>("WardData/Converts/TestResponses.csv");
+var convertData = CsvExtension.ReadCsv<ConvertsDataModel>("WardData/Converts/SampleResponses.csv");
 
 Console.WriteLine("Data Successfully Read");
 
@@ -60,6 +61,7 @@ Console.WriteLine("Data Successfully Read");
 string html = await File.ReadAllTextAsync("HtmlTemplates/Booklet.html"); // Parent HTML container
 
 var masterFamilyHtml = await FamilyPageGenerator.GeneratePages(familyData, imageHelper, imageSelectionService); // Families
+// var masterIndividualHtml = await IndividualPageGenerator.GeneratePages(individualData, imageHelper, imageSelectionService);// Individuals
 var masterMissionHtml = await MissionPageGenerator.GeneratePages(missionData, imageHelper, imageSelectionService); // Missions
 var masterConvertsHtml = await ConversionsPageGenerator.GeneratePages(convertData, imageHelper, imageSelectionService); // Converts
 

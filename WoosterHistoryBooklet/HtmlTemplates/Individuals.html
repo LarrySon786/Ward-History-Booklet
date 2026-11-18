@@ -1,0 +1,38 @@
+<head>
+    <link rel="stylesheet" href="Individuals.css">
+</head>
+
+<!-- PAGE 1: Individual INTRODUCTION -->
+<section class="page page-one">
+    <header class="family-header">
+        <h1>Families and Individuals</h1>
+    </header>
+
+    <section class="page-content">
+        <div class="individual-profile-details">
+            <div class="ordinary-photo-container individual-photo-container">
+                <img src="{{ImageOneReference}}" alt="Photo of {{FullName}} or alternative">
+            </div>
+            <h2>{{FullName}}</h2>
+            <h3>{{DatesMarkUp}}</h3>
+        </div>
+        <!-- Hobbies, Careers, Education, and callings -->
+        <div class="short-bio-container">
+            {{Education}}
+            {{Career}}
+            {{Hobbies}}
+            {{Callings}}
+        </div>
+
+        <div class="body-copy indvidual-bio-cards" style="{{PersonalBiographyStyle}}">
+            {{PersonalBiography}}
+        </div>
+
+    </section>
+
+    <footer class="page-footer">
+        <span>Ward History - {{FullName}}</span>
+        <span>1</span>
+    </footer>
+</section>
+

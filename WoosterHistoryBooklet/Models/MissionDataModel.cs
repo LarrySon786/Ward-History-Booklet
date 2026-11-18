@@ -25,7 +25,7 @@ public class MissionDataModel
     [Name("A Photo of Your Mission")]
     public string? MissionPhoto { get; set; }
 
-    [Name("Describe your mission (optional)")]
+    [Name("Describe your mission")]
     public string? MissionDescribed { get; set; }
 
     [Name("Interesting Story Title")]
