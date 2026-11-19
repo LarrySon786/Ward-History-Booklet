@@ -206,7 +206,7 @@ public static class FamilyPageGenerator
             childContainer = childContainer.Replace("{{Children}}", allChildren);
             childContainer = childContainer.Replace(
                 "{{ChildrenStyle}}",
-                FontSizeService.GetFittedFontSizeStyle(string.Join("\n", data.Children), 1.4f, 4.1f));
+                FontSizeService.GetFittedFontSizeStyle(string.Join("\n", data.Children), 1.4f, 4.1f, minFontSize: 8));
             childrenMarkUp = childContainer;
         }
 

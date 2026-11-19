@@ -96,14 +96,15 @@ public static class FontSizeService
     public static string GetFittedFontSizeStyle(
         string? text,
         float containerWidthInches,
-        float containerHeightInches)
+        float containerHeightInches,
+        float minFontSize = 9)
     {
         var result = GetFontSize(
             text,
             containerWidthInches,
             containerHeightInches,
             maxFontSize: 12f,
-            minFontSize: 9f,
+            minFontSize: minFontSize,
             step: 0.1f,
             lineHeight: 1.5f);
 
